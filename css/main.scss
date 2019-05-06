@@ -1,0 +1,13 @@
+// variables
+$brown: #2f1b15;
+
+// settings
+@import "settings/font.scss";
+@import "settings/normalize.scss";
+@import "settings/setting.scss";
+
+// sections
+@import "sections/header.scss";
+@import "sections/content.scss";
+@import "sections/footer.scss";
+@import "sections/adaptive.scss";
