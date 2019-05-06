@@ -168,4 +168,10 @@ a { -webkit-transition: 0.3s ease-out 0.1s; -o-transition: 0.3s ease-out 0.1s; t
 
 p { margin: 0; }
 
+.head { display: -webkit-box; display: -ms-flexbox; display: flex; padding-top: 62px; padding-bottom: 58px; }
+
+.wrapper { background: #e6c896 url("../img/bg/my_pattern.png") 50% 50% repeat; }
+
+.sticky { position: absolute; top: 47px; right: 52px; background: transparent url("../img/secret.png") 50% 50% no-repeat; width: 252px; height: 115px; }
+
 /*# sourceMappingURL=main.css.map */
