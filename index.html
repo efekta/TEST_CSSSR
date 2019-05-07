@@ -7,6 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>test_work</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
@@ -15,13 +16,59 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-			<div class="sticky"></div>
 			<div class="container">
+				<div class="sticky"></div>
 				<header class="head">
 					<div class="logo">
 						<img src="img/logo.png" alt="Логотип">
 					</div>
 				</header>
+
+				<main class="content">
+					<h1 class="title">Дело</h1>
+					<form action="#" class="page-form" method="POST">
+						<div class="page-form__box">
+							<label for="name">Полное ФИО</label>
+							<div class="page-form__input" >
+								<input id="name" type="text" value="Пташкина Лилия Игоревна" disabled>
+							</div>
+						</div>
+						<div class="page-form__box">
+							<label for="year">Год рождения</label>
+							<div class="page-form__input" >
+								<input id="year" type="text" value="1989" disabled>
+							</div>
+						</div>
+						<div class="page-form__box">
+							<label for="residence">Место жительства</label>
+							<div class="page-form__input" >
+								<input id="residence" type="text" value="г. Нововоронеж, Россия" disabled>
+							</div>
+						</div>
+						<div class="page-form__box">
+							<label for="skype">Скайп</label>
+							<div class="page-form__input" >
+								<input id="skype" type="text" value="solarledy" disabled>
+							</div>
+						</div>
+						<div class="page-form__box">
+							<label for="mail">Почта</label>
+							<div class="page-form__input" >
+								<input id="mail" type="text" value="efekta9@gmail.com" disabled>
+							</div>
+						</div>
+						<span class="subtitle">Расскажите о себе чекбоксами</span>
+						<p>Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+						<div class="checked-wrap">
+							<div class="checked-wrap__item">
+								<div class="checked-wrap__checkbox-box">
+									<input id="check" type="checkbox">
+									<label for="check">БЭМ/OOCSS</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</main>
 			</div>
 
 		</div>
