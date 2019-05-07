@@ -68,5 +68,22 @@
 .checked-wrap {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.checked-wrap__item {
+	width: 30%;
+
 }
 
+.checked-wrap__checkbox-box {
+	display: flex;
+	justify-content: space-between;
+	label {
+		padding-left: 30px;
+		margin-bottom: 12px;
+	}
+	label, sub {
+		font-size: 21px;
+		font-weight: 700;
+	}
+}

@@ -170,7 +170,7 @@ p { margin: 0; color: #3d3d3d; font-size: 15px; }
 
 input { background: transparent; outline: none; border: none; color: #231f20; font-size: 30px; }
 
-label { position: relative; padding-left: 30px; font-weight: 700; color: #000; cursor: pointer; }
+label { position: relative; font-weight: 700; color: #000; cursor: pointer; }
 
 input[type="checkbox"], input[type="radio"] { vertical-align: middle; font-size: 20px; line-height: 25px; cursor: pointer; display: none; }
 
@@ -200,6 +200,14 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 
 .subtitle { margin-top: 55px; margin-bottom: 10px; display: block; font-weight: bold; font-size: 24px; color: #2f1b15; }
 
-.checked-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.checked-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 60px; }
+
+.checked-wrap__item { width: 30%; }
+
+.checked-wrap__checkbox-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.checked-wrap__checkbox-box label { padding-left: 30px; margin-bottom: 12px; }
+
+.checked-wrap__checkbox-box label, .checked-wrap__checkbox-box sub { font-size: 21px; font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
