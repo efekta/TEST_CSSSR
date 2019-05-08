@@ -113,11 +113,13 @@
   width: 100%;
   height: 12px;
   cursor: pointer;
-  background: url('../img/bg/range.png') 100% 50% no-repeat;
+
+  background: url('../img/bg/range.png') no-repeat;
 }
 
 .range {
   position: relative;
+  text-align: left;
   // width: 550px;
   // height: 10px;
   // background: url('../img/bg/range.png') 100% 50% no-repeat;
@@ -181,7 +183,7 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-
+	width: 24%;
     // text-align: center;
     color: $brown;
     font-size: 13px;
@@ -227,13 +229,14 @@
   //   color: $brown;
   // }
   
-  // .selected::before {
-  //   background: #37adbf;
-  // }
+  .selected::before {
+    // background: #37adbf;
+
+  }
   
-  // .active.selected::before {
-  //   display: none;
-  // }
+  .active.selected::before {
+    // display: none;
+  }
 }
 // .range-labels {
 // 	position: relative;
