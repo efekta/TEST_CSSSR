@@ -27,34 +27,36 @@
 				<main class="content">
 					<h1 class="title">Дело</h1>
 					<form action="#" class="page-form" method="POST">
-						<div class="page-form__box">
-							<label for="name">Полное ФИО</label>
-							<div class="page-form__input" >
-								<input id="name" type="text" value="Пташкина Лилия Игоревна" disabled>
+						<div class="page-form__box_wrapp">
+							<div class="page-form__box">
+								<label for="name">Полное ФИО</label>
+								<div class="page-form__input" >
+									<input id="name" type="text" value="Пташкина Лилия Игоревна" disabled>
+								</div>
 							</div>
-						</div>
-						<div class="page-form__box">
-							<label for="year">Год рождения</label>
-							<div class="page-form__input" >
-								<input id="year" type="text" value="1989" disabled>
+							<div class="page-form__box">
+								<label for="year">Год рождения</label>
+								<div class="page-form__input" >
+									<input id="year" type="text" value="1989" disabled>
+								</div>
 							</div>
-						</div>
-						<div class="page-form__box">
-							<label for="residence">Место жительства</label>
-							<div class="page-form__input" >
-								<input id="residence" type="text" value="г. Нововоронеж, Россия" disabled>
+							<div class="page-form__box">
+								<label for="residence">Место жительства</label>
+								<div class="page-form__input" >
+									<input id="residence" type="text" value="г. Нововоронеж, Россия" disabled>
+								</div>
 							</div>
-						</div>
-						<div class="page-form__box">
-							<label for="skype">Скайп</label>
-							<div class="page-form__input" >
-								<input id="skype" type="text" value="solarledy" disabled>
+							<div class="page-form__box">
+								<label for="skype">Скайп</label>
+								<div class="page-form__input" >
+									<input id="skype" type="text" value="solarledy" disabled>
+								</div>
 							</div>
-						</div>
-						<div class="page-form__box">
-							<label for="mail">Почта</label>
-							<div class="page-form__input" >
-								<input id="mail" type="text" value="efekta9@gmail.com" disabled>
+							<div class="page-form__box">
+								<label for="mail">Почта</label>
+								<div class="page-form__input" >
+									<input id="mail" type="text" value="efekta9@gmail.com" disabled>
+								</div>
 							</div>
 						</div>
 						<h2 class="subtitle">Расскажите о себе чекбоксами</h2>
@@ -152,10 +154,18 @@
 							</div>
 
 							<ul class="range-labels">
-							  <li>Не владею</li>
-							  <li>Использую готовые решения</li>
-							  <li class="active selected">Использую готовые решения и умею их переделывать</li>
-							  <li>Пишу сложный JS с нуля</li>
+							  <div class="after_elem">
+							  	<li class="">Не владею</li>
+							  </div>
+							  <div class="after_elem">
+							  	<li class="">Использую готовые решения</li>
+							  </div>
+							  <div class="after_elem">
+							  	<li class="active selected">Использую готовые решения и умею их переделывать</li>
+							  </div>
+							  <div class="after_elem">
+							  	<li class="">Пишу сложный JS с нуля</li>
+							  </div>
 							</ul>
 						</div>
 					</form>

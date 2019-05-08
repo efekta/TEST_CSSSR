@@ -22,6 +22,9 @@
 .page-form p {
 	margin-bottom: 28px;
 }
+.page-form__box_wrapp {
+	margin-bottom: 65px;
+}
 .page-form__box {
 	display: flex;
 	align-items: flex-end;
@@ -99,30 +102,25 @@
 	}
 }
 @mixin rangeThumb {
-  width: 17px;
-  height: 14px;
-  margin: -25px 0  0;
-  // border-radius: 50%;
-  // background: #37adbf;
-  background:url('../img/icons/down.png') no-repeat;
-  cursor: pointer;
-  border: 0 !important;
+  // width: 17px;
+  // height: 14px;
+  // margin-top: -25px;
+  // margin-right: auto;
+  // background:url('../img/icons/down.png') no-repeat;
+  // cursor: pointer;
+  // border: 0 !important;
+  // display: none;
 }
 
 @mixin rangeTrack {
   width: 100%;
   height: 12px;
   cursor: pointer;
-
   background: url('../img/bg/range.png') no-repeat;
 }
 
 .range {
   position: relative;
-  text-align: left;
-  // width: 550px;
-  // height: 10px;
-  // background: url('../img/bg/range.png') 100% 50% no-repeat;
 }
 
 .range input {
@@ -131,6 +129,7 @@
   top: 2px;
   height: 0;
   -webkit-appearance: none;
+
 
   // Thumb
   &::-webkit-slider-thumb {
@@ -175,76 +174,123 @@
 
 // Labels below slider
 .range-labels {
+	position: relative;
 	display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     margin-bottom: 90px;
-  
+
+  .after_elem {
+  	position: relative;
+  	width: 25%;
+
+    &::after {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    margin-right: auto;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: $brown;
+    }
+
+}
+.after_elem:first-child::after {
+	display: none;
+}
+.after_elem:last-child::after {
+	display: none;
+}
   li {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
-	width: 24%;
-    // text-align: center;
+	// width: 25%;
     color: $brown;
     font-size: 13px;
     font-weight: bold;
     padding-top: 30px;
     cursor: pointer;
     
-    &::before {
-    position: absolute;
-    bottom: 34px;
-    left: 0;
-    content: "";
-    width: 3px;
-    height: 12px;
-    background: $brown;
-    // transform: translateX(-50%);
-    }
+    // &::before {
+    // position: absolute;
+    // bottom: 50px;
+    // left: 0;
+    // margin-right: auto;
+    // content: "";
+    // width: 3px;
+    // height: 12px;
+    // background: $brown;
+    // }
   }
 
-  li:first-child::before {
-    position: absolute;
-    bottom: 34px;
-    left: 0;
-    content: "";
-    width: 3px;
-    height: 12px;
-    background: $brown;
-    transform: translateX(-50%); 
-    display: none; 	
-  }
-  li:last-child::before {
-    position: absolute;
-    bottom: 34px;
-    left: 0;
-    content: "";
-    width: 3px;
-    height: 12px;
-    background: $brown;
-    transform: translateX(-50%); 
-    display: none; 	
-  }
-  // .active {
-  //   color: $brown;
+  // li:first-child::before {
+  //   bottom: 45px;
+  //   left: 0;
+  //   margin-right: auto;
+  //   content: "";
+  //   width: 3px;
+  //   height: 19px;
   // }
+  li:last-child {
+  	text-align: right;
+  }
+  // li:last-child::before {
+  //   display: none; 	
+  // }
+  // li:last-child::before {
+  //   position: absolute;
+  //   bottom: 45px;
+  //   right: 3px;
+  //   margin-right: auto;
+  //   content: "";
+  //   width: 3px;
+  //   height: 19px;
+  //   background: $brown;
+  // }
+  .active {
+  //   color: $brown;
+  	// position: relative;
+  }
   
   .selected::before {
-    // background: #37adbf;
-
+  // 	position: absolute;
+  // 	top: -25px;
+  //   // background: #37adbf;
+  // width: 17px;
+  // height: 14px;
+  // // margin: -25px 0  0;
+  // background:url('../img/icons/down.png') no-repeat;
+  // cursor: pointer;
+  // border: 0 !important;
   }
-  
+  .active.selected {
+  	position: relative;
+  }
   .active.selected::before {
-    // display: none;
+	    position: absolute;
+	  	top: -25px;
+	  	width: 17px;
+	  	height: 14px;
+	  	background:url('../img/icons/down.png') no-repeat;
+	  	cursor: pointer;
+	  	border: 0 !important;
   }
+  //   .active.selected::after {
+	 //    position: absolute;
+	 //    bottom: 50px;
+	 //    left: 0;
+	 //    margin-right: auto;
+	 //    content: "";
+	 //    width: 3px;
+	 //    height: 12px;
+	 //    background: $brown;
+  // }
 }
-// .range-labels {
-// 	position: relative;
-// }
+
 .range-labels::before {
   	position: absolute;
-    bottom: 27px;
-    left: 2px;
+    bottom: 45px;
+    left: 0;
     content: "";
     width: 3px;
     height: 19px;
@@ -252,7 +298,7 @@
   }
 .range-labels::after {
   	position: absolute;
-    bottom: 27px;
+    bottom: 46px;
     right: 0;
     content: "";
     width: 3px;
