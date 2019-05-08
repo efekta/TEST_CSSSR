@@ -181,6 +181,7 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
+
     // text-align: center;
     color: $brown;
     font-size: 13px;
@@ -196,40 +197,62 @@
     width: 3px;
     height: 12px;
     background: $brown;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     }
   }
 
-  // .active {
-  //   color: $brown;
-  // }
-  
-  .selected::before {
-    // background: #37adbf;
-  }
-  
-  .active.selected::before {
-    // display: none;
-  }
-}
-.range-labels {
-	position: relative;
-}
-.range-labels::before {
-  	position: absolute;
+  li:first-child::before {
+    position: absolute;
     bottom: 34px;
-    left: 2px;
+    left: 0;
     content: "";
     width: 3px;
     height: 12px;
     background: $brown;
+    transform: translateX(-50%); 
+    display: none; 	
   }
-.range-labels::after {
-  	position: absolute;
+  li:last-child::before {
+    position: absolute;
     bottom: 34px;
-    right: -2px;
+    left: 0;
     content: "";
     width: 3px;
     height: 12px;
+    background: $brown;
+    transform: translateX(-50%); 
+    display: none; 	
+  }
+  // .active {
+  //   color: $brown;
+  // }
+  
+  // .selected::before {
+  //   background: #37adbf;
+  // }
+  
+  // .active.selected::before {
+  //   display: none;
+  // }
+}
+// .range-labels {
+// 	position: relative;
+// }
+.range-labels::before {
+  	position: absolute;
+    bottom: 27px;
+    left: 2px;
+    content: "";
+    width: 3px;
+    height: 19px;
+    background: $brown;
+  }
+.range-labels::after {
+  	position: absolute;
+    bottom: 27px;
+    right: 0;
+    content: "";
+    width: 3px;
+    height: 19px;
     background: $brown;
 }

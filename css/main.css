@@ -240,12 +240,14 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 
 .range-labels li { position: relative; display: inline-block; vertical-align: middle; color: #2f1b15; font-size: 13px; font-weight: bold; padding-top: 30px; cursor: pointer; }
 
-.range-labels li::before { position: absolute; bottom: 34px; left: 0; content: ""; width: 3px; height: 12px; background: #2f1b15; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.range-labels li::before { position: absolute; bottom: 34px; left: 0; content: ""; width: 3px; height: 12px; background: #2f1b15; }
 
-.range-labels { position: relative; }
+.range-labels li:first-child::before { position: absolute; bottom: 34px; left: 0; content: ""; width: 3px; height: 12px; background: #2f1b15; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 
-.range-labels::before { position: absolute; bottom: 34px; left: 2px; content: ""; width: 3px; height: 12px; background: #2f1b15; }
+.range-labels li:last-child::before { position: absolute; bottom: 34px; left: 0; content: ""; width: 3px; height: 12px; background: #2f1b15; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); display: none; }
 
-.range-labels::after { position: absolute; bottom: 34px; right: -2px; content: ""; width: 3px; height: 12px; background: #2f1b15; }
+.range-labels::before { position: absolute; bottom: 27px; left: 2px; content: ""; width: 3px; height: 19px; background: #2f1b15; }
+
+.range-labels::after { position: absolute; bottom: 27px; right: 0; content: ""; width: 3px; height: 19px; background: #2f1b15; }
 
 /*# sourceMappingURL=main.css.map */
