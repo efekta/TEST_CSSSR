@@ -59,7 +59,6 @@
 	background: url('../img/bg/border.png') 100% 50% no-repeat;
 }
 .subtitle {
-	margin-top: 55px;
 	margin-bottom: 10px;
 	display: block;
 	font-weight: bold;
@@ -69,7 +68,7 @@
 .checked-wrap {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 }
 .checked-wrap__item {
 	width: 30%;
@@ -91,4 +90,146 @@
 		color: #1f5f97;
 		border-bottom: 1px solid #1f5f97;
 	}
+}
+
+.level-js {
+	margin-bottom: 35px;
+	.subtitle {
+		margin-bottom: 40px;
+	}
+}
+@mixin rangeThumb {
+  width: 17px;
+  height: 14px;
+  margin: -25px 0  0;
+  // border-radius: 50%;
+  // background: #37adbf;
+  background:url('../img/icons/down.png') no-repeat;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+@mixin rangeTrack {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: url('../img/bg/range.png') 100% 50% no-repeat;
+}
+
+.range {
+  position: relative;
+  // width: 550px;
+  // height: 10px;
+  // background: url('../img/bg/range.png') 100% 50% no-repeat;
+}
+
+.range input {
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  height: 0;
+  -webkit-appearance: none;
+
+  // Thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; // needed again for Chrome & Safari
+    @include rangeThumb;
+  }
+
+  &::-moz-range-thumb {
+    @include rangeThumb;
+  }
+
+  &::-ms-thumb {
+    @include rangeThumb;
+  }
+
+  // Track
+  &::-webkit-slider-runnable-track {
+    @include rangeTrack;
+  }
+
+  &::-moz-range-track {
+    @include rangeTrack;
+  }
+
+  &::-ms-track {
+    @include rangeTrack;
+  }
+
+  &:focus { // override outline/background on focus
+    background: none;
+    outline: none;
+  }
+
+  &::-ms-track { // A little somethin' somethin' for IE
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+}
+
+// Labels below slider
+.range-labels {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  
+  li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    // text-align: center;
+    color: $brown;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 30px;
+    cursor: pointer;
+    
+    &::before {
+    position: absolute;
+    bottom: 34px;
+    left: 0;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: $brown;
+    transform: translateX(-50%);
+    }
+  }
+
+  // .active {
+  //   color: $brown;
+  // }
+  
+  .selected::before {
+    // background: #37adbf;
+  }
+  
+  .active.selected::before {
+    // display: none;
+  }
+}
+.range-labels {
+	position: relative;
+}
+.range-labels::before {
+  	position: absolute;
+    bottom: 34px;
+    left: 2px;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: $brown;
+  }
+.range-labels::after {
+  	position: absolute;
+    bottom: 34px;
+    right: -2px;
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: $brown;
 }

@@ -198,9 +198,9 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 
 .page-form__input:before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 6px; background-size: cover; background: url("../img/bg/border.png") 100% 50% no-repeat; }
 
-.subtitle { margin-top: 55px; margin-bottom: 10px; display: block; font-weight: bold; font-size: 24px; color: #2f1b15; }
+.subtitle { margin-bottom: 10px; display: block; font-weight: bold; font-size: 24px; color: #2f1b15; }
 
-.checked-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 60px; }
+.checked-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 55px; }
 
 .checked-wrap__item { width: 30%; }
 
@@ -211,5 +211,41 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 .checked-wrap__checkbox-box label, .checked-wrap__checkbox-box sub { font-size: 21px; font-weight: 700; }
 
 .checked-wrap__checkbox-box a { color: #1f5f97; border-bottom: 1px solid #1f5f97; }
+
+.level-js { margin-bottom: 35px; }
+
+.level-js .subtitle { margin-bottom: 40px; }
+
+.range { position: relative; }
+
+.range input { width: 100%; position: absolute; top: 2px; height: 0; -webkit-appearance: none; }
+
+.range input::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 14px; margin: -25px 0  0; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+
+.range input::-moz-range-thumb { width: 17px; height: 14px; margin: -25px 0  0; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+
+.range input::-ms-thumb { width: 17px; height: 14px; margin: -25px 0  0; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+
+.range input::-webkit-slider-runnable-track { width: 100%; height: 12px; cursor: pointer; background: url("../img/bg/range.png") 100% 50% no-repeat; }
+
+.range input::-moz-range-track { width: 100%; height: 12px; cursor: pointer; background: url("../img/bg/range.png") 100% 50% no-repeat; }
+
+.range input::-ms-track { width: 100%; height: 12px; cursor: pointer; background: url("../img/bg/range.png") 100% 50% no-repeat; }
+
+.range input:focus { background: none; outline: none; }
+
+.range input::-ms-track { width: 100%; cursor: pointer; background: transparent; border-color: transparent; color: transparent; }
+
+.range-labels { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 90px; }
+
+.range-labels li { position: relative; display: inline-block; vertical-align: middle; color: #2f1b15; font-size: 13px; font-weight: bold; padding-top: 30px; cursor: pointer; }
+
+.range-labels li::before { position: absolute; bottom: 34px; left: 0; content: ""; width: 3px; height: 12px; background: #2f1b15; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+.range-labels { position: relative; }
+
+.range-labels::before { position: absolute; bottom: 34px; left: 2px; content: ""; width: 3px; height: 12px; background: #2f1b15; }
+
+.range-labels::after { position: absolute; bottom: 34px; right: -2px; content: ""; width: 3px; height: 12px; background: #2f1b15; }
 
 /*# sourceMappingURL=main.css.map */
