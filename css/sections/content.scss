@@ -102,13 +102,13 @@
 	}
 }
 @mixin rangeThumb {
-  // width: 17px;
-  // height: 14px;
-  // margin-top: -25px;
-  // margin-right: auto;
-  // background:url('../img/icons/down.png') no-repeat;
-  // cursor: pointer;
-  // border: 0 !important;
+  width: 17px;
+  height: 14px;
+  margin-top: -25px;
+  margin-right: auto;
+  background:url('../img/icons/down.png') no-repeat;
+  cursor: pointer;
+  border: 0 !important;
   // display: none;
 }
 
@@ -180,11 +180,39 @@
     flex-wrap: nowrap;
     margin-bottom: 90px;
 
-  .after_elem {
-  	position: relative;
-  	width: 25%;
+  // .after_elem {
+  // 	position: relative;
+  // 	width: 25%;
 
-    &::after {
+  //   &::after {
+  //   position: absolute;
+  //   bottom: 50px;
+  //   left: 0;
+  //   margin-right: auto;
+  //   content: "";
+  //   width: 3px;
+  //   height: 12px;
+  //   background: $brown;
+    
+
+
+// .after_elem:first-child::after {
+// 	display: none;
+// }
+// .after_elem:last-child::after {
+// 	display: none;
+// }
+  li {
+    position: relative;
+	width: 25%;
+    color: $brown;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 30px;
+    cursor: pointer;
+    // text-align: left;
+    
+    &::before {
     position: absolute;
     bottom: 50px;
     left: 0;
@@ -194,49 +222,17 @@
     height: 12px;
     background: $brown;
     }
-
-}
-.after_elem:first-child::after {
-	display: none;
-}
-.after_elem:last-child::after {
-	display: none;
-}
-  li {
-    position: relative;
-	// width: 25%;
-    color: $brown;
-    font-size: 13px;
-    font-weight: bold;
-    padding-top: 30px;
-    cursor: pointer;
-    
-    // &::before {
-    // position: absolute;
-    // bottom: 50px;
-    // left: 0;
-    // margin-right: auto;
-    // content: "";
-    // width: 3px;
-    // height: 12px;
-    // background: $brown;
-    // }
   }
 
-  // li:first-child::before {
-  //   bottom: 45px;
-  //   left: 0;
-  //   margin-right: auto;
-  //   content: "";
-  //   width: 3px;
-  //   height: 19px;
-  // }
+  li:first-child::before {
+	display: none;
+  }
   li:last-child {
   	text-align: right;
   }
-  // li:last-child::before {
-  //   display: none; 	
-  // }
+  li:last-child::before {
+    display: none; 	
+  }
   // li:last-child::before {
   //   position: absolute;
   //   bottom: 45px;
@@ -267,13 +263,13 @@
   	position: relative;
   }
   .active.selected::before {
-	    position: absolute;
-	  	top: -25px;
-	  	width: 17px;
-	  	height: 14px;
-	  	background:url('../img/icons/down.png') no-repeat;
-	  	cursor: pointer;
-	  	border: 0 !important;
+	   //  position: absolute;
+	  	// top: -25px;
+	  	// width: 17px;
+	  	// height: 14px;
+	  	// background:url('../img/icons/down.png') no-repeat;
+	  	// cursor: pointer;
+	  	// border: 0 !important;
   }
   //   .active.selected::after {
 	 //    position: absolute;
@@ -298,8 +294,8 @@
   }
 .range-labels::after {
   	position: absolute;
-    bottom: 46px;
-    right: 0;
+    bottom: 45px;
+    right: 3px;
     content: "";
     width: 3px;
     height: 19px;

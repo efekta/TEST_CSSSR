@@ -222,7 +222,11 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 
 .range input { width: 100%; position: absolute; top: 2px; height: 0; -webkit-appearance: none; }
 
-.range input::-webkit-slider-thumb { -webkit-appearance: none; }
+.range input::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 14px; margin-top: -25px; margin-right: auto; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+
+.range input::-moz-range-thumb { width: 17px; height: 14px; margin-top: -25px; margin-right: auto; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+
+.range input::-ms-thumb { width: 17px; height: 14px; margin-top: -25px; margin-right: auto; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
 
 .range input::-webkit-slider-runnable-track { width: 100%; height: 12px; cursor: pointer; background: url("../img/bg/range.png") no-repeat; }
 
@@ -236,24 +240,20 @@ input[type="checkbox"]:checked + label::before { width: 24px; height: 28px; cont
 
 .range-labels { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: nowrap; flex-wrap: nowrap; margin-bottom: 90px; }
 
-.range-labels .after_elem { position: relative; width: 25%; }
+.range-labels li { position: relative; width: 25%; color: #2f1b15; font-size: 13px; font-weight: bold; padding-top: 30px; cursor: pointer; }
 
-.range-labels .after_elem::after { position: absolute; bottom: 50px; left: 0; margin-right: auto; content: ""; width: 3px; height: 12px; background: #2f1b15; }
+.range-labels li::before { position: absolute; bottom: 50px; left: 0; margin-right: auto; content: ""; width: 3px; height: 12px; background: #2f1b15; }
 
-.range-labels .after_elem:first-child::after { display: none; }
-
-.range-labels .after_elem:last-child::after { display: none; }
-
-.range-labels li { position: relative; color: #2f1b15; font-size: 13px; font-weight: bold; padding-top: 30px; cursor: pointer; }
+.range-labels li:first-child::before { display: none; }
 
 .range-labels li:last-child { text-align: right; }
 
-.range-labels .active.selected { position: relative; }
+.range-labels li:last-child::before { display: none; }
 
-.range-labels .active.selected::before { position: absolute; top: -25px; width: 17px; height: 14px; background: url("../img/icons/down.png") no-repeat; cursor: pointer; border: 0 !important; }
+.range-labels .active.selected { position: relative; }
 
 .range-labels::before { position: absolute; bottom: 45px; left: 0; content: ""; width: 3px; height: 19px; background: #2f1b15; }
 
-.range-labels::after { position: absolute; bottom: 46px; right: 0; content: ""; width: 3px; height: 19px; background: #2f1b15; }
+.range-labels::after { position: absolute; bottom: 45px; right: 3px; content: ""; width: 3px; height: 19px; background: #2f1b15; }
 
 /*# sourceMappingURL=main.css.map */
