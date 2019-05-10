@@ -101,16 +101,16 @@
 		margin-bottom: 40px;
 	}
 }
-@mixin rangeThumb {
-  width: 17px;
-  height: 14px;
-  margin-top: -25px;
-  margin-right: auto;
-  background:url('../img/icons/down.png') no-repeat;
-  cursor: pointer;
-  border: 0 !important;
-  // display: none;
-}
+// @mixin rangeThumb {
+//   width: 17px;
+//   height: 14px;
+//   margin-top: -25px;
+//   // margin-right: auto;
+//   background:url('../img/icons/down.png') 100% 100% no-repeat;
+//   cursor: pointer;
+//   border: 0 !important;
+//   // display: none;
+// }
 
 @mixin rangeTrack {
   width: 100%;
@@ -134,15 +134,15 @@
   // Thumb
   &::-webkit-slider-thumb {
     -webkit-appearance: none; // needed again for Chrome & Safari
-    @include rangeThumb;
+    // @include rangeThumb;
   }
 
   &::-moz-range-thumb {
-    @include rangeThumb;
+    // @include rangeThumb;
   }
 
   &::-ms-thumb {
-    @include rangeThumb;
+    // @include rangeThumb;
   }
 
   // Track
@@ -249,27 +249,29 @@
   }
   
   .selected::before {
-  // 	position: absolute;
-  // 	top: -25px;
-  //   // background: #37adbf;
-  // width: 17px;
-  // height: 14px;
-  // // margin: -25px 0  0;
-  // background:url('../img/icons/down.png') no-repeat;
-  // cursor: pointer;
-  // border: 0 !important;
+  	position: absolute;
+  	top: -25px;
+    // background: #37adbf;
+    width: 17px;
+    height: 14px;
+    // margin: -25px 0  0;
+    background:url('../img/icons/down.png') no-repeat;
+    cursor: pointer;
+    border: 0 !important;
+    display: none;
   }
   .active.selected {
   	position: relative;
   }
   .active.selected::before {
-	   //  position: absolute;
-	  	// top: -25px;
-	  	// width: 17px;
-	  	// height: 14px;
-	  	// background:url('../img/icons/down.png') no-repeat;
-	  	// cursor: pointer;
-	  	// border: 0 !important;
+	    position: absolute;
+	  	top: -25px;
+	  	width: 17px;
+	  	height: 14px;
+	  	background:url('../img/icons/down.png') no-repeat;
+	  	cursor: pointer;
+	  	border: 0 !important;
+      display: block;
   }
   //   .active.selected::after {
 	 //    position: absolute;
