@@ -12,19 +12,15 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-
-
-
 		<!-- wrapper -->
 		<div class="wrapper">
-			<div class="container">
-				<div class="sticky"></div>
+			<div class="container box">
+				<!-- <div class="sticky"></div> -->
 				<header class="head">
-					<div class="logo">
+					<a href="https://csssr.com/ru" class="logo" target="blank">
 						<img src="img/logo.png" alt="Логотип">
-					</div>
+					</a>
 				</header>
-
 				<main class="content">
 					<h1 class="title">Дело</h1>
 					<form action="#" class="page-form" method="POST">
@@ -151,41 +147,67 @@
 						<div class="level-js">
 							<h2 class="subtitle">Уровень владения JavaScript</h2>
 							<div class="range">
-							  <input type="range" min="1" max="4" value="3">
+								<input type="range" min="1" max="4" value="3">
 							</div>
-
 							<ul class="range-labels">
-							  <!-- <div class="after_elem"> -->
-							  	<li class="">Не владею</li>
-							  <!-- </div> -->
-							  <!-- <div class="after_elem"> -->
-							  	<li class="">Использую готовые решения</li>
-							  <!-- </div> -->
-							  <!-- <div class="after_elem"> -->
-							  	<li class="active selected">Использую готовые решения и умею их переделывать</li>
-							  <!-- </div> -->
-							  <!-- <div class="after_elem"> -->
-							  	<li class="">Пишу сложный JS с нуля</li>
-							  <!-- </div> -->
+								<!-- <div class="after_elem"> -->
+								<li class="">Не владею</li>
+								<!-- </div> -->
+								<!-- <div class="after_elem"> -->
+								<li class="">Использую готовые решения</li>
+								<!-- </div> -->
+								<!-- <div class="after_elem"> -->
+								<li class="active selected">Использую готовые решения и умею их переделывать</li>
+								<!-- </div> -->
+								<!-- <div class="after_elem"> -->
+								<li class="">Пишу сложный JS с нуля</li>
+								<!-- </div> -->
 							</ul>
 						</div>
+						<div class="about">
+							<h2 class="subtitle">Расскажите о себе словами</h2>
+							<p>Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+							<div class="index__content">
+								<textarea class="textarea" style="overflow-x: hidden; overflow-wrap: break-word; height: 300px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga id voluptates possimus accusantium, culpa reprehenderit illum quidem, libero voluptatibus tempora, dolor animi. Voluptate maiores, rem facere ratione rerum et reprehenderit?</textarea>
+							</div>
+						</div>
+						<div class="future-plan">
+							<h2 class="subtitle">Какие у вас планы на будущее?</h2>
+							<p>
+								Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+							</p>
+
+								<div class="radio">
+									<div class="radio__item">
+										<input type="radio" id="radio-0" name="future">
+										<label for="radio-0" class="radio__radiobutton">Верстать</label>
+									</div>
+									<div class="radio__item">
+										<input type="radio" id="radio-1" name="future" checked>
+										<label for="radio-1" class="radio__radiobutton">Прокачиваться в JS</label>
+									</div>
+									<div class="radio__item">
+										<input type="radio" id="radio-2" name="future">
+										<label for="radio-2" class="radio__radiobutton">Менеджерство</label>
+									</div>
+									<div class="radio__item">
+										<input type="radio" id="radio-3" name="future">
+										<label for="radio-3" class="radio__radiobutton">Другое</label>
+									</div>
+								</div>
+
+						</div>
+						<div class="date">
+								<label>Дата заполенения</label>
+								<div class="date__input-wrap">
+									<input type="date" value="2019-05-13" size="10">
+								</div>
+						</div>
 					</form>
-
-
 				</main>
 			</div>
-
 		</div>
 		<!-- end wrapper -->
-
-
-
-		<!-- footer -->
-		<footer class="footer">
-		</footer>
-		<!-- end footer -->
-
-
 
 		<!--JAVA SCRIPT-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

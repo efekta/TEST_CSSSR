@@ -114,3 +114,27 @@ input[type="checkbox"]:checked + label::before {
     left: 0;
     top: -5px;
 }
+
+input[type="radio"] + label::before {
+    width: 41px;
+    height: 45px;
+    content: '';
+    background: url('../img/icons/ellips_big.png') no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+input[type="radio"]:checked + label::before {
+    width: 41px;
+    height: 45px;
+    content: '';
+    background: url('../img/icons/ellips_all.png') no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+sub {
+    bottom: -0.1em;
+}
